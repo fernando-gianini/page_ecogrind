@@ -13,7 +13,7 @@ const Testimonials = () => {
       role: "Diretor de Operações",
       content: "A Ecogrind transformou completamente nossa gestão de resíduos. Reduzimos 80% dos custos de descarte e ainda geramos receita com os materiais reciclados. Investimento que se pagou em menos de um ano!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      image: "/logo_metalurgicasilva.png"
     },
     {
       name: "Ana Rodrigues",
@@ -21,7 +21,7 @@ const Testimonials = () => {
       role: "CEO",
       content: "Equipamentos de qualidade excepcional e suporte técnico impecável. Nossa produtividade aumentou 150% após a implementação das soluções da Ecogrind. Recomendo sem hesitação!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+      image: "/logo_ecoplastico.png"
     },
     {
       name: "Roberto Santos",
@@ -29,7 +29,7 @@ const Testimonials = () => {
       role: "Gerente de Sustentabilidade",
       content: "Parceria estratégica que nos ajudou a alcançar certificações ambientais importantes. A eficiência dos equipamentos superou nossas expectativas e o ROI foi fantástico.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      image: "/logo_santosefilhos.png"
     },
     {
       name: "Marina Costa",
@@ -37,7 +37,7 @@ const Testimonials = () => {
       role: "Diretora Técnica",
       content: "Tecnologia de ponta aliada a um atendimento personalizado. A Ecogrind não apenas fornece equipamentos, mas oferece soluções completas para nossos desafios de reciclagem.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      image: "/logo_reciclagemverde.png"
     }
   ];
 

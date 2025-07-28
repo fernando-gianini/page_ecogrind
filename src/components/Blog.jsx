@@ -132,15 +132,13 @@ const Blog = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
-                <Button
-                  onClick={() => handleReadMore(post.title)}
-                  variant="ghost"
-                  size="sm"
-                  className="text-ecogrind-green hover:bg-ecogrind-green hover:text-white self-start p-2"
+                <Link
+                  to={`/blog/${post.id}`}
+                  className="mt-4 p-0 text-ecogrind-green self-start flex items-center hover:underline"
+                  style={{ fontWeight: 500, fontSize: '1rem' }}
                 >
-                  Ler mais
-                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                  Leia mais <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </div>
             </motion.article>
           ))}

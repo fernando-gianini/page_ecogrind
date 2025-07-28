@@ -1,57 +1,14 @@
-
-    import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowUp } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  return (
-    <AnimatePresence>
-      {isVisible && (
-        <motion.div
-          className="fixed bottom-24 right-6 z-50"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Button
-            onClick={scrollToTop}
-            size="icon"
-            className="rounded-full h-12 w-12 bg-ecogrind-green hover:bg-ecogrind-green/90 shadow-lg"
-            aria-label="Voltar ao topo"
-          >
-            <ArrowUp className="h-6 w-6" />
-          </Button>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
+  return null;
 };
 
 export default ScrollToTop;
-  

@@ -90,8 +90,8 @@ const Gallery = () => {
               ))}
             </ul>
             <Button asChild size="lg" className="w-full bg-ecogrind-green hover:bg-ecogrind-green/90">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                Solicitar Orçamento
+              <a href="/produtos">
+                Saiba mais
               </a>
             </Button>
           </motion.div>

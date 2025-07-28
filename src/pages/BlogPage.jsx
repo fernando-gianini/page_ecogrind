@@ -130,13 +130,13 @@ const BlogPage = () => {
                   </div>
                 </div>
                 <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
-                <Button
-                  onClick={() => handleReadMore(post.title)}
-                  variant="link"
-                  className="mt-4 p-0 text-ecogrind-green self-start"
+                <Link
+                  to={`/blog/${post.id}`}
+                  className="mt-4 p-0 text-ecogrind-green self-start flex items-center hover:underline"
+                  style={{ fontWeight: 500, fontSize: '1rem' }}
                 >
                   Leia mais <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Link>
               </div>
             </motion.div>
           ))}

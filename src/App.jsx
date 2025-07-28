@@ -26,6 +26,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> {/* Mova para dentro do Router, antes do layout principal */}
       <div className="flex flex-col min-h-screen bg-background text-foreground">
         <motion.div
           className="fixed top-0 left-0 right-0 h-1 bg-ecogrind-green origin-left z-50"
@@ -45,7 +46,6 @@ function App() {
         </main>
         <Footer />
         <FloatingWhatsApp />
-        <ScrollToTop />
       </div>
     </Router>
   );
